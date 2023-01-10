@@ -20,7 +20,11 @@ export default function NavBar() {
           <LogoText2>RMA</LogoText2>
         </LogoText>
       </LogoContainer>
-      <div>
+      <div
+        style={{
+          display: "flex",
+        }}
+      >
         {NavBarData.map((data) => (
           <NavBarItem heading={data.heading} details={data.details} />
         ))}
