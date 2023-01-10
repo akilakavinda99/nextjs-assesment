@@ -2,15 +2,15 @@ import {
   HeaderLink,
   HeaderWrapper,
 } from "../styles/styledComponents/HeaderStyles";
+import { HeaderData } from "../constants/data";
 
 export default function Header() {
   return (
     <HeaderWrapper>
       <div>
-        <HeaderLink>Home |</HeaderLink>
-        <HeaderLink> SiteMap |</HeaderLink>
-        <HeaderLink> Contact |</HeaderLink>
-        <HeaderLink> Purchase </HeaderLink>
+        {HeaderData.map((data) => (
+          <HeaderLink>{data}</HeaderLink>
+        ))}
       </div>
       <div>
         <HeaderLink> www.truetheme.net |</HeaderLink>
