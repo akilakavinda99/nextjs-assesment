@@ -3,18 +3,15 @@ import {
   Heading,
   Image,
   ImageDiv,
+  TextWrapper,
   Wrapper,
 } from "../../styles/styledComponents/SliderDataStyles";
+import { SliderImage } from "../../constants/images";
 
 export const SliderData = (props) => {
   return (
     <Wrapper>
-      <div
-        style={{
-          marginRight: 250,
-          marginLeft: 80,
-        }}
-      >
+      <TextWrapper>
         <Heading>{props.heading}</Heading>
         <Details>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -23,9 +20,10 @@ export const SliderData = (props) => {
           scrambled it to make a type specimen book. It has survived not only
           five centuries, more recently
         </Details>
-      </div>
+      </TextWrapper>
+
       <ImageDiv>
-        <Image src="https://i.postimg.cc/25rZ5FGc/pexels-ngai-man-yan-842153.jpg" />
+        <Image src={SliderImage} />
       </ImageDiv>
     </Wrapper>
   );

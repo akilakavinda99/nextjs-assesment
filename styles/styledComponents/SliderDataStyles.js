@@ -25,6 +25,11 @@ export const Details = styled.p`
   width: 400px;
 `;
 
+export const TextWrapper = styled.div`
+  margin-right: 250px;
+  margin-left: 80px;
+`;
+
 export const ImageDiv = styled.div`
   height: 370px;
   width: 550px;
