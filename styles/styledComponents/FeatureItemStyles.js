@@ -12,8 +12,9 @@ export const FeatureImage = styled.img`
   margin-bottom: 10px;
 `;
 
-export const FeatureHeading = styled.h3`
+export const FeatureHeading = styled.h4`
   width: 100%;
+  text-transform: uppercase;
 `;
 
 export const FeatureDetails = styled.p`
